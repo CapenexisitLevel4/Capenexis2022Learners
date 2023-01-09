@@ -1,0 +1,49 @@
+﻿@page
+@model Capenexis2022Learners.Pages.Learner.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Learners</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Learners.SurName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Learners.SurName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Learners.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Learners.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Learners.NationalIdentityNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Learners.NationalIdentityNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Learners.Course)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Learners.Course)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Learners.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Learners.Price)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Learners?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
