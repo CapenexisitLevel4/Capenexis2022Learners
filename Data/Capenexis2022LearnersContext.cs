@@ -15,5 +15,7 @@ namespace Capenexis2022Learners.Data
         }
 
         public DbSet<Capenexis2022Learners.Models.Learners> Learners { get; set; } = default!;
+
+        public DbSet<Capenexis2022Learners.Models.LevelFiveLearners> LevelFiveLearners { get; set; } = default!;
     }
 }
